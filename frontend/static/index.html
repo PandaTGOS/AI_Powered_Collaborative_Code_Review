@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Refactored Octo-Parakeet</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="editor-section">
+            <h2>Your Code</h2>
+            <textarea id="code" placeholder="Paste your code here..."></textarea>
+            <button onclick="analyzeCode()">Analyze Code</button>
+            <div class="output">
+                <h3>AI Suggestions</h3>
+                <div id="output"></div>
+            </div>
+        </div>
+        <div class="collab-section">
+            <h2>Collaboration</h2>
+            <div id="comments"></div>
+            <input id="comment" placeholder="Add comment...">
+            <button onclick="sendComment()">Send</button>
+        </div>
+    </div>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
